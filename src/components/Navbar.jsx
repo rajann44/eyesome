@@ -89,9 +89,9 @@ const Navbar = () => {
           aria-label="Global"
           className="hidden items-center justify-center gap-8 text-sm font-medium lg:flex lg:w-0 lg:flex-1"
         >
-          <a className="text-gray-900" href="">
-            About
-          </a>
+          <Link className="text-gray-900" to="/">
+            Home
+          </Link>
           <a className="text-gray-900" href="">
             Blog
           </a>
@@ -113,7 +113,7 @@ const Navbar = () => {
 
           <Link
             to="/auth"
-            className="rounded-lg bg-blue-600 px-5 py-2 text-sm font-medium text-white"
+            className="rounded-lg bg-purple-600 px-5 py-2 text-sm font-medium text-white"
           >
             Sign up
           </Link>

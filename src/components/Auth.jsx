@@ -52,7 +52,7 @@ const Auth = () => {
   return (
     <div className="flex min-h-screen w-full items-center justify-center text-gray-600 bg-gray-50">
       <div className="relative">
-        <div className="hidden sm:block h-56 w-56 text-red-300 absolute a-z-10 -left-20 -top-20">
+        <div className="hidden sm:block h-56 w-56 text-purple-300 absolute a-z-10 -left-20 -top-20">
           <svg
             id="patternId"
             width="100%"
@@ -84,7 +84,7 @@ const Auth = () => {
             />
           </svg>
         </div>
-        <div className="hidden sm:block h-28 w-28 text-red-300 absolute a-z-10 -right-20 -bottom-20">
+        <div className="hidden sm:block h-28 w-28 text-purple-300 absolute a-z-10 -right-20 -bottom-20">
           <svg
             id="patternId"
             width="100%"
@@ -123,7 +123,7 @@ const Auth = () => {
             <div className="mb-10 flex flex-shrink-0 flex-grow-0 items-center justify-center overflow-hidden">
               <Link
                 href="/"
-                className="flex cursor-pointer items-center gap-2 text-red-500 no-underline hover:text-red-500"
+                className="flex cursor-pointer items-center gap-2 text-purple-500 no-underline hover:text-purple-500"
               >
                 <span className="flex-shrink-0 text-3xl font-black lowercase tracking-tight opacity-100">
                   Eyesome
@@ -149,7 +149,7 @@ const Auth = () => {
                 </label>
                 <input
                   type="text"
-                  className="block w-full cursor-text appearance-none rounded-md border border-gray-400 bg--100 py-2 px-3 text-sm outline-none focus:border-red-500 focus:bg-white focus:text-gray-600 focus:shadow"
+                  className="block w-full cursor-text appearance-none rounded-md border border-gray-400 bg--100 py-2 px-3 text-sm outline-none focus:border-purple-500 focus:bg-white focus:text-gray-600 focus:shadow"
                   id="email"
                   name="email-username"
                   placeholder="Enter your email"
@@ -172,7 +172,7 @@ const Auth = () => {
                   <input
                     type="password"
                     id="password"
-                    className="relative block flex-auto cursor-text appearance-none rounded-md border border-gray-400 bg--100 py-2 px-3 text-sm outline-none focus:border-red-500 focus:bg-white focus:text-gray-600 focus:shadow"
+                    className="relative block flex-auto cursor-text appearance-none rounded-md border border-gray-400 bg--100 py-2 px-3 text-sm outline-none focus:border-purple-500 focus:bg-white focus:text-gray-600 focus:shadow"
                     name="password"
                     placeholder="············"
                     onChange={(event) =>
@@ -186,7 +186,7 @@ const Auth = () => {
               </div>
               <div className="mb-4">
                 <button
-                  className="grid w-full cursor-pointer select-none rounded-md border border-red-500 bg-red-500 py-2 px-5 text-center align-middle text-sm text-white shadow hover:border-red-600 hover:bg-red-600 hover:text-white focus:border-red-600 focus:bg-red-600 focus:text-white focus:shadow-none"
+                  className="grid w-full cursor-pointer select-none rounded-md border border-purple-500 bg-purple-500 py-2 px-5 text-center align-middle text-sm text-white shadow hover:border-purple-600 hover:bg-purple-600 hover:text-white focus:border-purple-600 focus:bg-purple-600 focus:text-white focus:shadow-none"
                   onClick={
                     isAlreadyCustomer
                       ? (e) => handleSignIn(e)
@@ -202,7 +202,7 @@ const Auth = () => {
               Already on eyesome? &nbsp;
               <a
                 href="#"
-                className="cursor-pointer text-red-500 no-underline hover:text-red-500"
+                className="cursor-pointer text-purple-500 no-underline hover:text-purple-500"
                 onClick={toggleFormSignSignup}
               >
                 {isAlreadyCustomer ? "Sign up Here" : "Sign in Here"}
