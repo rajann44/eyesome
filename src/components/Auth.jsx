@@ -121,14 +121,14 @@ const Auth = () => {
           <div className="flex-auto p-6">
             {/* <!-- Logo --> */}
             <div className="mb-10 flex flex-shrink-0 flex-grow-0 items-center justify-center overflow-hidden">
-              <a
+              <Link
                 href="/"
                 className="flex cursor-pointer items-center gap-2 text-red-500 no-underline hover:text-red-500"
               >
                 <span className="flex-shrink-0 text-3xl font-black lowercase tracking-tight opacity-100">
                   Eyesome
                 </span>
-              </a>
+              </Link>
             </div>
             {/* <!-- /Logo --> */}
             <h4 className="mb-2 font-medium text-gray-700 xl:text-xl">
