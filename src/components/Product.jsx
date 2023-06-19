@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getProductDetailsFromDb } from "../firebase/Database/Products";
 import Spinner from "./Spinner";
+import { Link } from "react-router-dom";
 
 const Product = () => {
   const [productDetails, setProductDetails] = useState([]);
@@ -33,11 +34,13 @@ const Product = () => {
               key={index}
             >
               <a class="relative flex h-60 overflow-hidden" href="#">
-                <img
-                  class="absolute top-0 right-0 h-full w-full object-cover"
-                  src={product.image}
-                  alt="product image"
-                />
+                <Link to="/details" state={product}>
+                  <img
+                    class="absolute top-0 right-0 h-full w-full object-cover"
+                    src={product.image}
+                    alt="product image"
+                  />
+                </Link>
               </a>
               <div class="mt-4 px-5 pb-5">
                 <a href="#">

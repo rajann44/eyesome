@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <Link href="#">
+          <Link to="/">
             <span className="text-2xl font-bold text-purple-600/100">
               Eyesome
             </span>

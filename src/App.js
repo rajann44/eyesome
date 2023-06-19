@@ -3,6 +3,8 @@ import "./App.css";
 import Auth from "./components/Auth";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import Details from "./components/Details";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>} />
         <Route path="/auth" element={<Auth />} />
+        <Route path="/details" element={<Details />} />
       </Routes>
+      <Footer></Footer>
     </>
   );
 }
