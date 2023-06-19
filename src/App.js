@@ -5,10 +5,11 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Details from "./components/Details";
 import Footer from "./components/Footer";
+import { UserContextProvider } from "./context/UserContext";
 
 function App() {
   return (
-    <>
+    <UserContextProvider>
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>} />
@@ -16,7 +17,7 @@ function App() {
         <Route path="/details" element={<Details />} />
       </Routes>
       <Footer></Footer>
-    </>
+    </UserContextProvider>
   );
 }
 

@@ -64,12 +64,13 @@ const Details = () => {
               </a>
             </div>
             <p class="leading-relaxed">
-              Dive into the depths of the ocean with this mesmerizing artwork. "
-              {propsData?.name}" - {propsData?.category} is a stunning mixed
-              media piece that combines acrylics and metallic paints to create a
-              stunning visual effect that shimmers and changes with the light.
-              The painting depicts a serene underwater scene, with schools of
-              fish and coral reefs swaying gently in the current.
+              Experience unparalleled style and protection with our premium
+              sunglasses and specs collection. {propsData?.name} -{" "}
+              {propsData?.category} is crafted with precision, these fashionable
+              eyewear pieces are designed to elevate your look while shielding
+              your eyes from harmful UV rays. Choose from a wide range of trendy
+              designs and lens options to find the perfect pair that suits your
+              personal style and enhances your vision.
             </p>
 
             <div class="flex mt-4">
@@ -77,7 +78,7 @@ const Details = () => {
                 {propsData?.price}
               </span>
               <button
-                class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded"
+                class="flex ml-auto text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded"
                 //onClick={() => addProductToCart(propsData)}
               >
                 Add to Cart
