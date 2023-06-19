@@ -22,14 +22,14 @@ const Product = () => {
   return (
     <>
       {isLoading ? (
-        <div class="flex justify-center items-center h-screen">
+        <div class="flex justify-center items-center h-96">
           <Spinner></Spinner>
         </div>
       ) : (
-        <div className="flex">
+        <div className="flex flex-wrap m-2">
           {productDetails.map((product, index) => (
             <div
-              class="group m-3 my-10 flex w-full max-w-xs flex-col overflow-hidden border border-gray-100 bg-white shadow-md"
+              class="group m-3 w-full max-w-xs flex-col overflow-hidden border border-gray-100 bg-white shadow-md"
               key={index}
             >
               <a class="relative flex h-60 overflow-hidden" href="#">

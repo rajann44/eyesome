@@ -29,10 +29,12 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <a href="#">
-            <span className="sr-only">Logo</span>
+          <Link href="#">
+            <span className="text-2xl font-bold text-purple-600/100">
+              Eyesome
+            </span>
             <span className="h-10 w-20 rounded-lg bg-gray-200"></span>
-          </a>
+          </Link>
 
           <form className="mb-0 hidden lg:flex">
             <div className="relative">
@@ -123,9 +125,9 @@ const Navbar = () => {
       <div className="border-t border-gray-100 lg:hidden">
         <ul className="flex items-center justify-center overflow-x-auto p-4 text-sm font-medium">
           <li>
-            <a className="shrink-0 px-4 text-gray-900" href="">
-              About
-            </a>
+            <Link className="text-gray-900" to="/">
+              Home
+            </Link>
           </li>
           <li>
             <a className="shrink-0 px-4 text-gray-900" href="">
